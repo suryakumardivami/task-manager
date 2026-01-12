@@ -1,7 +1,7 @@
 package com.divami.task_manager.controller;
 
 import com.divami.task_manager.entity.Users;
-import com.divami.task_manager.service.UserServiceInterface;
+import com.divami.task_manager.service.UserServiceInt;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
@@ -10,9 +10,9 @@ import java.util.UUID;
 @RestController()
 @RequestMapping("/api/users")
 public class UserController {
-	private final UserServiceInterface userService;
+	private final UserServiceInt userService;
 	
-	public UserController(UserServiceInterface userService) {
+	public UserController(UserServiceInt userService) {
 		this.userService = userService;
 	}
 	

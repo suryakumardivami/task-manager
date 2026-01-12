@@ -5,7 +5,7 @@ import com.divami.task_manager.entity.Users;
 import java.util.List;
 import java.util.UUID;
 
-public interface UserServiceInterface {
+public interface UserServiceInt {
 	Users createUser(Users user);
 	
 	List<Users> getAllUsers();

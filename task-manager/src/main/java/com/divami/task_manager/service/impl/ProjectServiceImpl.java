@@ -1,18 +1,18 @@
 package com.divami.task_manager.service.impl;
 
-import com.divami.task_manager.repository.ProjectRepository;
+import com.divami.task_manager.repository.ProjectRepositoryInt;
 import com.divami.task_manager.entity.Projects;
-import com.divami.task_manager.service.ProjectServiceInterface;
+import com.divami.task_manager.service.ProjectServiceInt;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
 import java.util.UUID;
 
 @Service
-public class ProjectServiceImpl implements ProjectServiceInterface {
-	private final ProjectRepository projectRepo;
+public class ProjectServiceImpl implements ProjectServiceInt {
+	private final ProjectRepositoryInt projectRepo;
 	
-	public ProjectServiceImpl(ProjectRepository projectRepo) {
+	public ProjectServiceImpl(ProjectRepositoryInt projectRepo) {
 		this.projectRepo = projectRepo;
 	}
 	

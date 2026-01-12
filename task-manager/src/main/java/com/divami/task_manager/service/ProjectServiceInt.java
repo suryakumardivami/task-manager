@@ -5,7 +5,7 @@ import com.divami.task_manager.entity.Projects;
 import java.util.UUID;
 import java.util.List;
 
-public interface ProjectServiceInterface {
+public interface ProjectServiceInt {
 	Projects createProject(Projects project);
 	
 	List<Projects> getAllProjects();

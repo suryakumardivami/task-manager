@@ -11,9 +11,9 @@ import java.util.UUID;
 @RestController
 @RequestMapping("/api/projects")
 public class ProjectController {
-	private final ProjectServiceInterface projectServiceInt;
+	private final ProjectServiceInt projectServiceInt;
 	
-	public ProjectController(ProjectServiceInterface projectServiceInt) {
+	public ProjectController(ProjectServiceInt projectServiceInt) {
 		this.projectServiceInt = projectServiceInt;
 	}
 	

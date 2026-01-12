@@ -1,17 +1,17 @@
 package com.divami.task_manager.service.impl;
 
 import com.divami.task_manager.entity.Users;
-import com.divami.task_manager.repository.UserRepository;
-import com.divami.task_manager.service.UserServiceInterface;
+import com.divami.task_manager.repository.UserRepositoryInt;
+import com.divami.task_manager.service.UserServiceInt;
 import org.springframework.stereotype.Service;
 
 import java.util.*;
 
 @Service
-public class UserServiceImpl implements UserServiceInterface {
-	private final UserRepository userRepository;
+public class UserServiceImpl implements UserServiceInt {
+	private final UserRepositoryInt userRepository;
 	
-	public UserServiceImpl(UserRepository userRepository) {
+	public UserServiceImpl(UserRepositoryInt userRepository) {
 		this.userRepository = userRepository;
 	}
 	
